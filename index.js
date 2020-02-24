@@ -35,3 +35,19 @@ function concat(...args) {
 	const arr = []
 	return arr.concat(...args)
 }
+
+// Write a function that takes a string and returns an object stating how many of each characters are in that string. String: "code challenges" output: {c: 2, o: 1, d: 1, e: 3, h: 1, a:1, l: 2, n: 1, g: 1, s: 1}
+function str2Obj(str) {
+	const obj = {}
+	for(let i = 0; i < str.length; i++) {
+		let char = str.charAt(i)
+		if(obj[char]) {
+			obj[char] ++
+		} else if(char == " ") {
+			!obj[char]
+		} else {
+			obj[char] = 1
+		}
+	}
+	console.log(obj)
+}
