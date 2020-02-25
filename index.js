@@ -51,3 +51,12 @@ function str2Obj(str) {
 	}
 	console.log(obj)
 }
+
+// Given an array of strings and a string, write a function that counts how many instances of that string are in the array
+const countStrings = (arr, str) => {
+	let count = 0
+	for(let i = 0; i < arr.length; i++) {
+		arr[i] === str ? count ++ : count 
+	}
+	console.log(count)
+}
