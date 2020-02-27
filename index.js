@@ -60,3 +60,13 @@ const countStrings = (arr, str) => {
 	}
 	console.log(count)
 }
+
+// Write a function that takes an unsorted array as a parameter, and returns the missing number.
+function findMissingNumber(arr) {
+	const sortedArr = arr.sort((a, b) => a - b)
+	for(let i = 1; i < sortedArr.length; i++) {
+		if(sortedArr[i] - sortedArr[i - 1] === 2) {
+			return sortedArr[i] - 1
+		}
+	}
+}
