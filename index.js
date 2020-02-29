@@ -70,3 +70,8 @@ function findMissingNumber(arr) {
 		}
 	}
 }
+
+// Write a function that adds two numbers. ** This is a test **
+const sum = (a, b) => {
+	return a + b
+}
