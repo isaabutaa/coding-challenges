@@ -75,3 +75,8 @@ function findMissingNumber(arr) {
 const sum = (a, b) => {
 	return a + b
 }
+
+// Write a function that subtracts two numbers. ** this is a test commit **
+const remainder = (a, b) => {
+	return a - b
+}
