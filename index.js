@@ -80,3 +80,20 @@ const sum = (a, b) => {
 const remainder = (a, b) => {
 	return a - b
 }
+
+// Write a for loop that counts to one hundred. Every number evenly divisible by 3 will be replaced by fizz. Every number evenly divisible by 5 will be replaced by buzz. And every number evenly divisible by both 3 and 5 will be replaced with FizzBuzz.
+function fizzbuzz() {
+	for(let i = 0; i <= 100; i++) {
+		if(i % 3 === 0) {
+			if(i % 5 === 0) {
+				console.log("fizzbuzz")
+			}
+			console.log("fizz")
+		} else if(i % 5 === 0) {
+			console.log("buzz")
+		} else {
+			console.log(i)
+		}
+	}
+}
+
